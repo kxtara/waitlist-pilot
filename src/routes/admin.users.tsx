@@ -24,13 +24,6 @@ function UsersPage() {
   const [page, setPage] = useState(0);
   const limit = 10;
 
-  // debounce
-  useState(() => {
-    const t = setTimeout(() => setDebounced(query), 300);
-    return () => clearTimeout(t);
-  });
-
-  // simpler: useEffect
   useDebouncedReset(query, setDebounced, setPage);
 
   const isSearching = debounced.trim().length > 0;
