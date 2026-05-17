@@ -1,4 +1,5 @@
-export const API_BASE = "https://backend-mu6z.onrender.com/api/v1/waitlist";
+// export const API_BASE = "https://backend-mu6z.onrender.com/api/v1/waitlist";
+import { baseUrl as API_BASE } from "../routes/index";
 
 const TOKEN_KEY = "admin_access_token";
 const USER_KEY = "admin_user";
